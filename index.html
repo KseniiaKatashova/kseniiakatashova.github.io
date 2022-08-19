@@ -1,0 +1,212 @@
+<!-- Final Project
+Student : Kseniia Katashova
+Student ID: 138164207
+Date: 19/08/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kseniia Katashova" />
+    <title>Final Project: Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> <!--connect my css file-->
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container"></div>
+        <br>
+        <br>
+        <div class="general">
+            <img src="./images/photo.jpg">
+            <br>
+            <h1>Kseniia Katashova</h1>
+            <br>
+            <h4>Web Developer, Software Engineer</h4>
+            <br>
+            <br>
+            <br>
+            <br>
+                <button type="button" class="button">
+                    <a href="./Kseniia_Katashova- Resume.pdf">Resume</a>
+                </button>
+
+                <button type="button" class="button">
+                    <a href="#contact">Contact Me</a>
+                </button>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="row">
+            <div class="about_info-1">
+                <h2 class="sub-title">Basic Information</h2>
+                <br>
+                    <table>
+                    <tr>
+                        <td><b>Name:</b></td>
+                        <td>Kseniia Katashova</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email:</b></td>
+                        <td>kkatashova@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Languages:</b></td>
+                        <td>English, Ukrainian, Russian</td>
+                    </tr>
+                    <tr>
+                        <td><b>Course:</b></td>
+                        <td>WEB222</td>
+                    </tr>
+                    <tr>
+                        <td><b>Section:</b></td>
+                        <td>NGG</td>
+                    </tr>
+                    <tr>
+                        <td><b>Instructor: </b></td>
+                        <td>Harry Scanlan</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="about_info-2">
+                <h2 class="sub-title">About Me and Academic Honesty</h2>
+                <br>
+                <p>I declare that I have done whole the assignment by myself and only used the code
+                    that my professor provided and WEB222 instructions.
+                </p>
+                <br>
+                <p><b>Date:</b> Aug 19, 2022</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="education">
+        <h2 class="title">Education</h2>
+        <div class="education">
+            <div class="col"><h4>Advanced Diploma in Computer Programming & Analysis</h4>
+                <br>
+                <p><em><b>2021 – 2024</b></em></p>
+                    <br>
+                <p>Seneca College,Toronto, Canada</p>
+            </div>
+            <div class="col"><h4>Certificate of the Physician-Specialist</h4></p>
+                <br>
+                <p><em><b>2018 – 2020</b></em></p>
+                    <br>
+                    <br>
+                <p>P.L. Shupyk National Medical Academy of Postgraduate Education, Kyiv, Ukraine</p></div>
+            <div class="col"><p><h4>First professional degree in medicine (Doctor of Medicine)</h4></p>
+                <br>
+                <p><em><b>2012 –  2018</b></em></p>
+                    <br>
+                <p>Dnipropetrovsk Medical Academy of the Ministry of Health of Ukraine, Ukraine</p></div>
+        </div>
+    </div>
+
+
+    <div id="contact" id="contact">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-info">
+            <form  id="signup" action="https://httpbin.org/post" class="contact-form" method="POST">
+                <div class="form-info error success" >
+                    <label for="name">Full Name:</label>
+                    <input  id="name"  name="name" type="text" placeholder="Name" autocomplete="off" required>
+                    <small></small>
+                </div>
+
+                <div class="form-info error success">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="example@gmail.com" autocomplete="off" required>
+                    <small></small>
+                </div>
+
+                <div class="form-info error success">
+                    <label for="address">Address: </label>
+                    <input type="text" id="address" placeholder="XXX Bloor Street" autocomplete="off" required>
+                    <small></small>
+                </div>
+
+                <div class="form-info error success">
+                    <label for="city">City:</label>
+                    <input list="cities" id="city" name="city" placeholder="Toronto" autocomplete="off" required/>
+
+                    <datalist id="cities">
+                        <option value="Burlington"></option>
+                        <option value="Calgary"></option>
+                        <option value="Kingston"></option>
+                        <option value="London"></option>
+                        <option value="Missisauga"></option>
+                        <option value="Montreal"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Toronto"></option>
+                        <option value="Vancouver"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-info error success">
+                    <label for="postalCode">Postal Code: </label>
+                    <input type="text" id="postalCode" name="postalCode" placeholder="M4S 0S3" autocomplete="off" required>
+                    <small></small>
+                </div>
+                <br>
+            
+                <div class="radio-options" aria-required="true">
+                    <p>What is the purpose of your message?</p>
+                  
+                    <input type="radio" id="question" name="purpose" value="question"/>
+                    <label for="question">Question</label><br>
+                   
+                    <input type="radio" id="comment" name="purpose" value="comment" />
+                    <label for="comment">Comment</label><br>
+                 
+                    <input type="radio" id="hiring" name="purpose" value="hiring" />
+                    <label for="hiring">Hiring</label>
+                  
+                    <input  type="number" id="rate" name="rate" placeholder="Hourly rate" hidden/>
+        
+                </div>
+                
+
+                <div class="form-info error success">
+                    <label for="feedback">Your Message</label>
+                    <textarea
+                        id="feedback"
+                        name="feedback"
+                        cols="40"
+                        rows="5"
+                        placeholder="Your message"
+                        required>
+                    </textarea>
+                    <small></small>
+                </div>
+    
+                
+                <div class="form-info error success">
+                    <label for="phone">Phone number</label>
+                    <input
+                        id="phone"
+                        name="phone" 
+                        type="text" 
+                        placeholder="**-***-***-****"
+                        autocomplete="off"/>
+                        <small></small>
+                </div>
+
+
+                <div class="form-info">
+                    <input type="reset" value="Reset"> 
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+ <script src="./script/script.js"></script>
+  
+</body>
+</html>

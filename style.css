@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    height: 400px;
+    
+}
+
+h1{
+    text-align: center;
+    text-decoration:underline;
+    color: rgb(82, 77, 55);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h4{
+    text-align: center;
+    color: rgb(110, 101, 88);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.general{
+    text-align: center;
+}
+
+.button {
+  background-color: rgb(233, 231, 204);
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+  padding: auto;
+  border: none;
+  display: inline-block;
+  margin: 20px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(37, 5, 5);;
+}
+
+#about{
+    width: 100%;
+    height: 30vh;
+    background-image: url(images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about_info-1{
+    flex-basis: 35%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.about_info-2{
+    flex-basis: 60%;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+.sub-title{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(126, 113, 96);
+}
+
+.about_info-1 td{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about_info-2 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#education{
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(237, 212, 171);
+    color: rgb(32, 29, 22);
+}
+
+.title{
+    color: rgb(82, 77, 55);;
+    height: 7vh;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.education{
+    width: 100%;
+    height: 490px;
+}
+
+.col{
+    width: 245px;
+    height: 300px;
+    background-color: rgb(236, 236, 206);
+    float:left;
+    border: 7px solid rgb(126, 113, 96);
+    padding: 20px;
+    margin: 40px;
+}
+
+.col p{
+    text-align: center;
+    color: rgb(51, 41, 28);;
+}
+
+
+#contact{
+    background-image: url(./images/7.jpg);
+    padding-top: 30px;
+    width: 100%;
+    height: 60vh;
+    color: rgb(32, 29, 22);
+}
+
+.contact-info {
+    text-align: center;
+}
+.contact-form {
+    width: 40%;
+    text-align: right;
+}
+
+
+.form-info textarea, input{
+    border-radius: 5px;
+    width: 250px;
+    margin: 2px;
+    border: none;
+}
+    
+.form-info input{
+    padding: 10px;
+    height: 30px;
+}
+
+.form-group input {
+    background-color: rgb(233, 231, 204);  
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    width: auto;
+    text-align: center;
+    padding: auto;
+    border: none;
+    display: inline-block;
+    margin: 20px 15px;
+    color: rgb(37, 5, 5);
+  }
+
+
+#rate {
+  background-color: #FFF;
+  width: 25%;
+  margin-top: 10px;
+  font-weight: 800;
+  padding: 5px;
+  color: black;
+}
+
+
+
+/*===== MEDIA QUERIES =====*/
+@media screen and (max-width: 320px)
+{
+  img {
+    width: 80%;
+    height: auto;
+  }
+
+  
+}
+@media screen and (min-width: 320px)
+{
+  img {
+    height: 250px;
+  }
+
+  .about_info-2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .education {    
+    height: 1150px;
+  }
+  .contact-form {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 667px)
+{
+  img {
+    height: 350px;
+  }
+
+    .education {    
+    height: 770px;
+  }
+  .contact-form {
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 992px)
+{
+  img {
+    height: 400px;
+  }
+
+  .about_info-2 {
+    flex-basis: 60%;
+    text-align: left;
+  }
+  .education {    
+    height: 380px;
+  }
+  .contact-form {
+    width: 50%;
+  }
+
+}
